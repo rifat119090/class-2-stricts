@@ -1,0 +1,155 @@
+/*global css start*/
+*{
+	margin: 0;
+	padding:0;
+	font-family: 'Lato', sans-serif;
+}
+.contenbar{ width: 1140px;
+           margin: 0 auto;
+ }
+
+.col-1{width:8.33% ;
+	float: left; 
+ }
+.col-2{width:16.66% ;
+	float: left;
+
+     
+     }
+.col-3{width:25% ;
+	float: left;
+}
+.col-4{width:33.33% ;
+	float: left;
+}
+.col-5{width:41.667% ;
+	float: left;
+}
+.col-6{width:50% ;
+     float: left;
+ }
+.col-7{width:58.333% ; 
+         float: left;
+ }
+.col-8{width:66.667% ;
+       float: left;
+}
+.col-9{width:75% ;
+     float: left;
+}
+.col-10{width:83.333% ;
+        float: left;
+}
+.col-11{width:91.6667% ;
+       float: left;
+}
+.col-12{width:100% ;
+       float: left;
+}
+.rows{
+	width:100% ;
+}
+/*global css end*/
+/*topbar css start*/
+.topbar{
+
+	height: 80px;
+}
+.topbar .logo{
+		padding: 20px 0;
+}
+/*topbar css end*/
+/*banner css start*/
+.banner{background: url("../image/banner.png");
+              width: 100%;
+               height: 700px;
+              background-position: center;
+              position: relative;
+}
+.banner .hero-area{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+.banner h1{
+	color: #fff;
+	font-size: 120px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom:20px ;
+}
+.banner .blueline{
+	width: 40%;
+	background: #15a4fa;
+	height: 2px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.banner p{color: white;
+	 text-align: center;
+	 margin-bottom: 40px;}
+.banner .highlight{font-size: 20px;
+	           text-transform: uppercase;}
+.banner .btn-cta{color: white;
+	            text-decoration: none;
+	           display: block;
+	            margin: 0 auto;
+	            border: 1px solid #15a4fa;
+	            text-align: center;
+	            width: 13%;
+	            padding:15px 0px;
+	            position: relative;
+ }
+/* .banner .btn-cta:hover{
+ 	transition: 0.5s ease-in-out;
+ 	background:#15a4fa ;
+ }*/
+  .banner .btn-cta::after{
+  	content: "";
+  	/*border-right: 2px solid #15a4fa;*/
+  	background:#15a4fa ;
+  /*	height: 0%;
+  	width: 100%;*/
+  	height: 100%;
+  	width: 0%;
+  	position: absolute;
+  	top: 0;
+  	/*right:0;*/
+  	left: 0;
+  	/*bottom: 0;*/
+  	z-index: -1;
+  }
+    .banner .btn-cta::before{
+  	content: "";
+  	/*background:#15a4fa ;*/
+  	background: #15a4fa87;
+  	/*border-left: 2px solid #15a4fa;*/
+  	/*background:green;*/
+/*  	height: 0%;*/
+      height: 100%;
+  	/*width: 100%;*/
+  	width: 0%;
+  	position: absolute;
+  /*	bottom: 0;*/
+  	/*right:0;*/
+  	top: 0;
+  	left: 0;
+  	z-index: -1;
+  }
+  .banner .btn-cta:hover::after{
+  	/*transition: 0.5s ease-in-out;*/
+  	transition: 2s ease-in-out;
+ /* height: 50%;*/
+  /*width: 50%;*/
+  width: 100%;
+  }
+  .banner .btn-cta:hover::before{
+  	/*transition: 0.5s ease-in-out;*/
+  	transition: 1s ease-in-out;
+  /*height: 50%;*/
+  /*width: 50%;*/
+  width: 100%;
+  }
+/*banner css end*/
